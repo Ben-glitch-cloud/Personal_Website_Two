@@ -116,10 +116,11 @@ body
 #profile 
 {
     width: 100%;
-    height: 400px;
+    
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;  
+    flex-direction: row;
     opacity: 0;
 }
 
@@ -133,13 +134,27 @@ body
 
 #profile_item 
 {
-    width: 400px; 
+    width: 60%; 
     margin: 0 40px; 
     padding: 0; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     font-size: 16px;
     text-align: justify;
-}  
+}    
+
+/* profile media screen */
+
+@media (max-width: 950px) {
+    #profile
+    {
+        flex-direction: column;
+    } 
+
+    #profile_item 
+    {
+        margin: 20px 0px;
+    }
+}
 
 /* Work */ 
 
@@ -162,13 +177,13 @@ body
 
 #Work_item 
 {   
-    width: 600px; 
+    width: 50%; 
     position: absolute; 
     display: flex; 
     justify-content: space-between;
     align-items: center; 
     flex-direction: row;   
-    left: 100px;
+    left: 100px; 
     opacity: 0; 
     
 } 
@@ -204,7 +219,7 @@ body
 
 #Work_item_two 
 {   
-    width: 600px;   
+    width: 50%;   
     display: flex;  
     position: absolute;
     justify-content: space-between;
@@ -246,7 +261,7 @@ body
 
 #Work_item_third 
 {   
-    width: 600px;   
+    width: 50%;   
     display: flex;  
     position: absolute;
     justify-content: space-between;
@@ -288,7 +303,7 @@ body
 
 #Work_item_four 
 {   
-    width: 600px;   
+    width: 50%;   
     display: flex;  
     position: absolute;
     justify-content: space-between;
@@ -316,9 +331,232 @@ body
     text-align: justify; 
     margin-left: 40px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}  
+
+/* media screen size  */
+
+
+
+/* Education */  
+
+.Education_header 
+{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}  
+
+#Education_one 
+{
+    width: 100%; 
+    height: 250px; 
+    margin-top: 60px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: row; 
+    opacity: 0;
 } 
 
-/* new arrar */
+.Education_one_image
+{
+    width: 150px;
+    height: 150px; 
+    background-color: red; 
+    margin-right: 20px;
+} 
+
+.Education_one_info 
+{
+    width: 300px; 
+    margin-left: 20px; 
+    font-size: 16px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: justify;
+} 
+
+#Education_two 
+{
+    width: 100%;
+    height: 250px; 
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    opacity: 0;
+}  
+
+.Education_two_image 
+{
+    width: 150px;
+    height: 150px; 
+    background-color: red; 
+    margin-right: 20px;
+} 
+
+.Education_two_info 
+{
+    width: 300px; 
+    margin-left: 20px; 
+    font-size: 16px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: justify;
+}
+
+/* Projects */
+
+#project_heading 
+{   
+    margin-top: 240px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 30px;
+    text-align: center; 
+}
+
+#ProjectWorkedOn
+{
+    width: 100%; 
+    margin: 140px 0;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 18px;
+}  
+
+#ProjectWorked_item_1 
+{   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-align: justify; 
+    opacity: 0;
+} 
+
+#ProjectWorked_item_2 
+{   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-align: justify; 
+    opacity: 0;
+} 
+
+#ProjectWorked_item_3 
+{   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-align: justify;
+    opacity: 0;
+}
+
+.ProjectWorkedOn_gif 
+{   
+    
+    width: 150px;
+    height: 150px;  
+    margin: 10px 0;
+    background-color: fuchsia;
+} 
+
+#hobbies_heading 
+{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 30px;
+} 
+
+.hobbies 
+{
+    display: flex;  
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.hobbies ul 
+{
+    padding: 0px;
+} 
+
+.hobbies ul li 
+{
+    list-style: none; 
+    margin: 10px 0;  
+    padding: 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;  
+    color: black;
+    text-align: center;
+}
+
+.hobbies ul li:hover
+{
+    color: pink; 
+
+} 
+
+/* footer */
+
+footer
+{
+    width: 100%;
+    height: 70px;
+    background-color: pink; 
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-evenly; 
+    align-items: center; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}  
+
+.footer_item  
+{
+    margin: 0;
+    padding: 0;
+} 
+
+.footer_item_list 
+{
+    
+} 
+
+.footer_item_list ul 
+{
+   
+} 
+
+.footer_item_list ul li 
+{
+    list-style: none; 
+    display: inline-block; 
+    margin: 0 10px;  
+    padding: 0 10px;
+    color: black;
+} 
+
+.footer_item_list ul li a 
+{
+    color: black;
+    text-decoration: none;
+}
+
+.footer_item_list ul li a:hover
+{
+    color: white;
+}
+
 
 
 
